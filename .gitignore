@@ -8,3 +8,8 @@ __pycache__/
 Thumbs.db
 models/*
 !models/.gitkeep
+!models/heart_disease_catboost.cbm
+!models/model_metadata.json
+reports/*
+figures/Capture d'écran*.png
+figures/sklearn-ml-map-cheatsheet-heart-disease-ensemble.png

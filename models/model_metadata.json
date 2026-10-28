@@ -1,0 +1,66 @@
+{
+  "model_name": "CatBoostClassifier",
+  "catboost_version": "1.2.10",
+  "threshold": 0.5,
+  "feature_order": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "categorical_features": [
+    "sex",
+    "cp",
+    "fbs",
+    "restecg",
+    "exang",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "target_mapping": {
+    "no": 0,
+    "yes": 1
+  },
+  "sex_mapping": {
+    "female": 0,
+    "male": 1
+  },
+  "best_parameters": {
+    "random_strength": 1,
+    "learning_rate": 0.01,
+    "l2_leaf_reg": 5,
+    "iterations": 500,
+    "depth": 4,
+    "bagging_temperature": 1
+  },
+  "cv_metrics": {
+    "accuracy_mean": 0.848,
+    "accuracy_std": 0.057,
+    "f1_mean": 0.862,
+    "f1_std": 0.054,
+    "roc_auc_mean": 0.904,
+    "roc_auc_std": 0.037
+  },
+  "holdout_metrics": {
+    "accuracy": 0.836,
+    "precision": 0.795,
+    "recall": 0.939,
+    "f1": 0.861,
+    "tn": 20,
+    "fp": 8,
+    "fn": 2,
+    "tp": 31
+  },
+  "training_rows": 303,
+  "disclaimer": "Educational demonstration only; not a medical diagnostic tool."
+}
